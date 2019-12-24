@@ -22,6 +22,8 @@ class SignIn extends React.Component {
     }
 
     handleChange = event => {
+        // console.log(event.target.value === this.state.email);
+        
         const { value, name } = event.target;
         this.setState({ [name]: value }); // dynamically set state
     }
